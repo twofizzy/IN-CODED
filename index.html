@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div id="arch">
+		<div id="left">
+			<h1 id="maintitle">NINE</h1>
+			<h3 id="subtitle">[CONCEPT]
+			</h3>
+		</div>
+		<div id="right">
+<div id="container">
+	<div id="one" class="row">
+		<div class="cell" onclick="rvl('cellOne')"><img class="art" src="images/place-revenge.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+				<div id="cellOne" class="cellExpand">Integral information</div>
+		</div>
+		<div class="cell"><img class="art" src="images/huckleberry.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+				<div id="cellTwo" class="cellExpand">Integral information</div>	
+		</div>
+		<div class="cell"><img class="art" src="images/aksuttin.jpg">
+			<div class="middle"><text>INFORMATIONtext></div>
+				<div class="cellExpand">Integral information</div>
+		</div>
+	</div>
+	<div id="two" class="row">
+		<div class="cell"><img class="art" src="images/loosies2.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+			<div class="cellExpand">Integral informations</div>
+		</div>
+		<div class="cell"><img class="art" src="images/shadeemus.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+		</div>
+		<div class="cell"><img class="art" src="images/slaps-flowey.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+		</div>
+	</div>
+	<div id="three" class="row">
+		<div class="cell"><img class="art" src="images/diti.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+		</div>
+		<div class="cell"><img class="art" src="images/type0419.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+		</div>
+		<div class="cell"><img class="art" src="images/afronaut-zu.jpg">
+			<div class="middle"><text>INFORMATION</text></div>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+<script type ="application/javascript">
+function rvl(music){
+var i, content;
+content = document.getElementsByClassName('cellExpand');
+for(i = 0; i < content.length; i++){
+	content[i].style.display = "none"; 
+	console.log(cellExpand);
+	}
+	//call individual cells
+document.getElementById(music).style.display = "block";
+document.querySelectorAll('.cell').addEventListener("click", rvl);
+}
+document.getElementById("cellOne").click();
+//document.querySelectorAll('.cell').forEach(item => {
+//item.addEventListener('click', reveal);
+//To do
+//Find way of presenting cellExpand
+//Event Listeners
+//Find parent to present information 
+	</script>
+	</body>
+</html>
+
